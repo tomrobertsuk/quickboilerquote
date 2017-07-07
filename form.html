@@ -1,0 +1,239 @@
+<ol class="form-progress">
+    <li class="step-1 active">
+        <span class="step-number"><span class="digit">1</span> <i class="fa fa-check" aria-hidden="true"></i></span>
+        About you
+    </li>
+    <li class="step-2">
+        <span class="step-number"><span class="digit">2</span> <i class="fa fa-check" aria-hidden="true"></i></span>
+        Your property
+    </li>
+    <li class="step-3">
+        <span class="step-number"><span class="digit">3</span> <i class="fa fa-check" aria-hidden="true"></i></span>
+        Your boiler
+    </li>
+</ol>
+
+<div class="multi-step-form">
+
+    <div class="form-step active" id="step-1">
+        <div class="form-step-inner">
+            <h3>Tell us about you</h3>
+            <p>Please complete all fields</p>
+            <div class="row clear">
+                <div class="col-6">
+                    <label> Your First Name
+                    [text* firstname id:firstname class:required] </label>
+                </div>
+                <div class="col-6">
+                    <label> Your Last Name
+                    [text* lastname id:lastname class:required] </label>
+                </div>
+            </div>
+            <div class="row clear">
+                <div class="col-6">
+                    <label> Your Phone Number
+                    [tel* phone id:phone class:required class:phone-input] </label>
+                </div>
+                <div class="col-6">
+                    <label> Your Email
+                    [email* email id:email class:required class:email-input] </label>
+                </div>
+            </div>
+            
+            <a class="step-1-next form-next button" href="#step-2">Continue</a>
+        </div>
+    </div>
+
+    <div class="form-step" id="step-2">
+        <div class="form-step-inner">
+            <h3>Tell us about your property</h3>
+            <p>Please complete all fields</p>
+            <div class="row clear">
+                <div class="col-6">
+                    <label> Your Postcode
+                    [text* postcode id:postcode class:required class:postcode-input] </label>
+                </div>
+                <div class="col-6">
+                    <label> Property Type
+                    [select* propertytype id:propertytype class:required include_blank "House" "Flat"] </label>
+                </div>
+            </div>
+            <div class="row clear">
+                <div class="col-6">
+                    <label> Gas Supply
+                    [select* gassupply id:gassupply class:required include_blank "Natural" "Tank"] </label>
+                </div>
+                <div class="col-6">
+                    <label> Number of Radiators
+                    [number* radiators id:radiators min:0 class:required] </label>
+                </div>
+            </div>    
+    
+            <a class="step-2-next form-next button" href="#step-3">Continue</a>
+        </div>
+    </div>
+
+    <div class="form-step" id="step-3">
+        <div class="form-step-inner">
+            <h3>Show us your current boiler</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+            <div class="row clear">
+                <div class="col-4">
+                    <div class="upload-box">
+                    <img src="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png">
+                    [file* img1 limit:5242880 filetypes:jpg|png|gif id:img1 class:file-upload] 
+                    <label for="img1">
+                        <span class="instruction">Front of Boiler <small>1ft above and below</small> <a data-fancybox="img-1" href="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png"><i class="fa fa-info-circle" aria-hidden="true"></i> View example</a></span>
+                        <figure>
+                            <svg version="1.1" class="upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                            <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,15.4l10.7,10.1h-6.8
+                                v10.5h-7.8V25.6h-6.8L35,15.4z M55.7,42.3l-1.2,6.4c-0.4,1-1.4,1.9-2.7,1.9H18.1c-1,0-2.3-0.8-2.5-1.9l-1.2-6.4
+                                c-0.2-1,0.4-2.5,1.2-3.1l6.6-4.3h4.1l-7,5.4h7.4c0.2,0,0.2,0.2,0.4,0.4l1.7,4.5h12.4l1.7-4.7c0,0,0.2-0.2,0.4-0.2h7.2l-7-5.4h4.1
+                                l6.6,4.3C55.2,39.8,55.9,41.3,55.7,42.3z"/>
+                            </svg>
+                            <svg version="1.1" class="check-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                                <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M50.7,23.1l-17,27.3
+                                    c-0.6,0.9-1.6,1.5-2.7,1.6c-0.1,0-0.1,0-0.2,0c-1.1,0-2.1-0.5-2.7-1.3l-8.7-11.5c-1.1-1.5-0.8-3.6,0.7-4.8c1.5-1.1,3.6-0.8,4.8,0.7
+                                    l5.7,7.6L45,19.5c1-1.6,3.1-2.1,4.7-1.1C51.2,19.5,51.7,21.5,50.7,23.1z"/>
+                            </svg>
+                        </figure>
+                        <span class="choose-an-img">Choose an image...</span>
+                    </label>
+                    </div>          
+                </div>
+                <div class="col-4">
+                    <div class="upload-box">
+                    <img src="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png">
+                    [file* img2 limit:5242880 filetypes:jpg|png|gif id:img2 class:file-upload]
+                    <label for="img2">
+                        <span class="instruction">Front of Boiler <small>1ft above and below</small> <a data-fancybox="img-2" href="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png"><i class="fa fa-info-circle" aria-hidden="true"></i> View example</a></span>
+                        <figure>
+                            <svg version="1.1" class="upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                            <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,15.4l10.7,10.1h-6.8
+                                v10.5h-7.8V25.6h-6.8L35,15.4z M55.7,42.3l-1.2,6.4c-0.4,1-1.4,1.9-2.7,1.9H18.1c-1,0-2.3-0.8-2.5-1.9l-1.2-6.4
+                                c-0.2-1,0.4-2.5,1.2-3.1l6.6-4.3h4.1l-7,5.4h7.4c0.2,0,0.2,0.2,0.4,0.4l1.7,4.5h12.4l1.7-4.7c0,0,0.2-0.2,0.4-0.2h7.2l-7-5.4h4.1
+                                l6.6,4.3C55.2,39.8,55.9,41.3,55.7,42.3z"/>
+                            </svg>
+                            <svg version="1.1" class="check-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                                <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M50.7,23.1l-17,27.3
+                                    c-0.6,0.9-1.6,1.5-2.7,1.6c-0.1,0-0.1,0-0.2,0c-1.1,0-2.1-0.5-2.7-1.3l-8.7-11.5c-1.1-1.5-0.8-3.6,0.7-4.8c1.5-1.1,3.6-0.8,4.8,0.7
+                                    l5.7,7.6L45,19.5c1-1.6,3.1-2.1,4.7-1.1C51.2,19.5,51.7,21.5,50.7,23.1z"/>
+                            </svg>
+                        </figure>
+                        <span class="choose-an-img">Choose an image...</span>    
+                    </label>
+                    </div>           
+                </div>
+                <div class="col-4">
+                    <div class="upload-box">
+                    <img src="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png">
+                    [file* img3 limit:5242880 filetypes:jpg|png|gif id:img3 class:file-upload] 
+                    <label for="img3">
+                        <span class="instruction">Front of Boiler <small>1ft above and below</small> <a data-fancybox="img-3" href="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png"><i class="fa fa-info-circle" aria-hidden="true"></i> View example</a></span>
+                        <figure>
+                            <svg version="1.1" class="upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                            <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,15.4l10.7,10.1h-6.8
+                                v10.5h-7.8V25.6h-6.8L35,15.4z M55.7,42.3l-1.2,6.4c-0.4,1-1.4,1.9-2.7,1.9H18.1c-1,0-2.3-0.8-2.5-1.9l-1.2-6.4
+                                c-0.2-1,0.4-2.5,1.2-3.1l6.6-4.3h4.1l-7,5.4h7.4c0.2,0,0.2,0.2,0.4,0.4l1.7,4.5h12.4l1.7-4.7c0,0,0.2-0.2,0.4-0.2h7.2l-7-5.4h4.1
+                                l6.6,4.3C55.2,39.8,55.9,41.3,55.7,42.3z"/>
+                            </svg>
+                            <svg version="1.1" class="check-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                                <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M50.7,23.1l-17,27.3
+                                    c-0.6,0.9-1.6,1.5-2.7,1.6c-0.1,0-0.1,0-0.2,0c-1.1,0-2.1-0.5-2.7-1.3l-8.7-11.5c-1.1-1.5-0.8-3.6,0.7-4.8c1.5-1.1,3.6-0.8,4.8,0.7
+                                    l5.7,7.6L45,19.5c1-1.6,3.1-2.1,4.7-1.1C51.2,19.5,51.7,21.5,50.7,23.1z"/>
+                            </svg>
+                        </figure>
+                        <span class="choose-an-img">Choose an image...</span>
+                    </label>
+                    </div> 
+                </div>
+                <div class="col-4">
+                    <div class="upload-box">
+                    <img src="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png">
+                    [file* img4 limit:5242880 filetypes:jpg|png|gif id:img4 class:file-upload] 
+                    <label for="img4">
+                        <span class="instruction">Front of Boiler <small>1ft above and below</small> <a data-fancybox="img-4" href="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png"><i class="fa fa-info-circle" aria-hidden="true"></i> View example</a></span>
+                        <figure>
+                            <svg version="1.1" class="upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                            <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,15.4l10.7,10.1h-6.8
+                                v10.5h-7.8V25.6h-6.8L35,15.4z M55.7,42.3l-1.2,6.4c-0.4,1-1.4,1.9-2.7,1.9H18.1c-1,0-2.3-0.8-2.5-1.9l-1.2-6.4
+                                c-0.2-1,0.4-2.5,1.2-3.1l6.6-4.3h4.1l-7,5.4h7.4c0.2,0,0.2,0.2,0.4,0.4l1.7,4.5h12.4l1.7-4.7c0,0,0.2-0.2,0.4-0.2h7.2l-7-5.4h4.1
+                                l6.6,4.3C55.2,39.8,55.9,41.3,55.7,42.3z"/>
+                            </svg>
+                            <svg version="1.1" class="check-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                                <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M50.7,23.1l-17,27.3
+                                    c-0.6,0.9-1.6,1.5-2.7,1.6c-0.1,0-0.1,0-0.2,0c-1.1,0-2.1-0.5-2.7-1.3l-8.7-11.5c-1.1-1.5-0.8-3.6,0.7-4.8c1.5-1.1,3.6-0.8,4.8,0.7
+                                    l5.7,7.6L45,19.5c1-1.6,3.1-2.1,4.7-1.1C51.2,19.5,51.7,21.5,50.7,23.1z"/>
+                            </svg>
+                        </figure>
+                        <span class="choose-an-img">Choose an image...</span>
+                    </label>
+                    </div> 
+                </div>
+                <div class="col-4">
+                    <div class="upload-box">
+                    <img src="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png">
+                    [file* img5 limit:5242880 filetypes:jpg|png|gif id:img5 class:file-upload] 
+                    <label for="img5">
+                        <span class="instruction">Front of Boiler <small>1ft above and below</small> <a data-fancybox="img-5" href="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png"><i class="fa fa-info-circle" aria-hidden="true"></i> View example</a></span>
+                        <figure>
+                            <svg version="1.1" class="upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                            <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,15.4l10.7,10.1h-6.8
+                                v10.5h-7.8V25.6h-6.8L35,15.4z M55.7,42.3l-1.2,6.4c-0.4,1-1.4,1.9-2.7,1.9H18.1c-1,0-2.3-0.8-2.5-1.9l-1.2-6.4
+                                c-0.2-1,0.4-2.5,1.2-3.1l6.6-4.3h4.1l-7,5.4h7.4c0.2,0,0.2,0.2,0.4,0.4l1.7,4.5h12.4l1.7-4.7c0,0,0.2-0.2,0.4-0.2h7.2l-7-5.4h4.1
+                                l6.6,4.3C55.2,39.8,55.9,41.3,55.7,42.3z"/>
+                            </svg>
+                            <svg version="1.1" class="check-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                                <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M50.7,23.1l-17,27.3
+                                    c-0.6,0.9-1.6,1.5-2.7,1.6c-0.1,0-0.1,0-0.2,0c-1.1,0-2.1-0.5-2.7-1.3l-8.7-11.5c-1.1-1.5-0.8-3.6,0.7-4.8c1.5-1.1,3.6-0.8,4.8,0.7
+                                    l5.7,7.6L45,19.5c1-1.6,3.1-2.1,4.7-1.1C51.2,19.5,51.7,21.5,50.7,23.1z"/>
+                            </svg>
+                        </figure>
+                        <span class="choose-an-img">Choose an image...</span>
+                    </label>
+                    </div> 
+                </div>
+                <div class="col-4">
+                    <div class="upload-box">
+                    <img src="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png">
+                    [file* img6 limit:5242880 filetypes:jpg|png|gif id:img6 class:file-upload] 
+                    <label for="img6">
+                        <span class="instruction">Front of Boiler <small>1ft above and below</small> <a data-fancybox="img-6" href="/wp-content/themes/quickboilerquote/img/form/boiler-img-1.png"><i class="fa fa-info-circle" aria-hidden="true"></i> View example</a></span>
+                        <figure>
+                            <svg version="1.1" class="upload-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                            <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M35,15.4l10.7,10.1h-6.8
+                                v10.5h-7.8V25.6h-6.8L35,15.4z M55.7,42.3l-1.2,6.4c-0.4,1-1.4,1.9-2.7,1.9H18.1c-1,0-2.3-0.8-2.5-1.9l-1.2-6.4
+                                c-0.2-1,0.4-2.5,1.2-3.1l6.6-4.3h4.1l-7,5.4h7.4c0.2,0,0.2,0.2,0.4,0.4l1.7,4.5h12.4l1.7-4.7c0,0,0.2-0.2,0.4-0.2h7.2l-7-5.4h4.1
+                                l6.6,4.3C55.2,39.8,55.9,41.3,55.7,42.3z"/>
+                            </svg>
+                            <svg version="1.1" class="check-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+                                <path class="st0" d="M35,0C15.7,0,0,15.7,0,35c0,19.3,15.7,35,35,35s35-15.7,35-35C70,15.7,54.3,0,35,0z M50.7,23.1l-17,27.3
+                                    c-0.6,0.9-1.6,1.5-2.7,1.6c-0.1,0-0.1,0-0.2,0c-1.1,0-2.1-0.5-2.7-1.3l-8.7-11.5c-1.1-1.5-0.8-3.6,0.7-4.8c1.5-1.1,3.6-0.8,4.8,0.7
+                                    l5.7,7.6L45,19.5c1-1.6,3.1-2.1,4.7-1.1C51.2,19.5,51.7,21.5,50.7,23.1z"/>
+                            </svg>
+                        </figure>
+                        <span class="choose-an-img">Choose an image...</span>
+                    </label>
+                    </div> 
+                </div>
+            </div>
+
+            <div id="img-errors"></div>
+            
+            [submit "Send"]
+        </div>
+    </div>
+
+</div>
